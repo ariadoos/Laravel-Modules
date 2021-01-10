@@ -1,0 +1,17 @@
+{
+    "name": "modules/core",
+    "type": "library",
+    "description": "Core Modules",
+    "autoload": {
+        "psr-4": {
+            "Modules\\Core\\": "ariadoos/core/src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Core\\Providers\\CoreServiceProvider"
+            ]
+        }
+    }
+}

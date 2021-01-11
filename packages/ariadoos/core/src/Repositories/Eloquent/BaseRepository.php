@@ -8,7 +8,7 @@
 namespace Modules\Core\Repositories\Eloquent;
 
 use Illuminate\Database\Eloquent\Model;
-use Modules\Core\Repositories\Contracts\BaseRepositoryInterface;
+use Modules\Core\Repositories\Interfaces\BaseRepositoryInterface;
 
 class BaseRepository implements BaseRepositoryInterface
 {

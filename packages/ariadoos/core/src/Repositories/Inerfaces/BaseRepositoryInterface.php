@@ -5,7 +5,7 @@
  * Date: 1/10/2021
  * Time: 7:42 PM
  */
-namespace Modules\Core\Repositories\Contracts;
+namespace Modules\Core\Repositories\Interfaces;
 
 interface BaseRepositoryInterface
 {

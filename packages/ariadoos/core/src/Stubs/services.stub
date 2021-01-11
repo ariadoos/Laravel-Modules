@@ -1,0 +1,24 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use App\Core\Services\BaseService;
+use $INTERFACE_NAMESPACE$
+
+class $CLASS_NAME$Service extends BaseService
+{
+    /**
+     * $CLASS_NAME$RepositoryInterface instance.
+    **/
+    protected $repository;
+
+   /**
+    * {module}Service constructor.
+    * @param {module}RepositoryInterface $repository
+   **/
+    public function __construct($CLASS_NAME$RepositoryInterface $repository)
+    {
+        parent::__construct();
+        $this->repository = $repository;
+    }
+}

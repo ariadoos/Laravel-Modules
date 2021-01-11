@@ -32,10 +32,9 @@ return [
         'Providers' => ['parent' => null, 'generate' => true],
         'Repository' => ['parent' => null, 'generate' => true],
         'Eloquent' => ['parent' => 'Repository', 'generate' => true],
-        'Interface' => ['parent' => 'Repository', 'generate' => true],
+        'Interfaces' => ['parent' => 'Repository', 'generate' => true],
         'Api' => ['parent' => 'Http/Controllers', 'generate' => true],
         'Web' => ['parent' => 'Http/Controllers', 'generate' => true],
         'Resources' => ['parent' => 'Http' , 'generate' => true],
-
     ]
 ];

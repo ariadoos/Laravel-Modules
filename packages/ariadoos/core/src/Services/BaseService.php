@@ -12,5 +12,13 @@ use Modules\Core\Traits\ResponseTraits;
 
 class BaseService
 {
+    /**
+     * ResponseTraits
+     */
     use ResponseTraits;
+
+    /**
+     * BaseService constructor.
+     */
+    public function __construct() {}
 }

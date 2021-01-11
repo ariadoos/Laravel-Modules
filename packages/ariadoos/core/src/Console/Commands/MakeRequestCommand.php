@@ -51,7 +51,7 @@ class MakeRequestCommand extends GenerateCommand
     {
         return [
             'NAMESPACE' => $this->getModuleNamespace($this->argument('module') . '\\' . 'Http\\Requests'),
-            'CLASS_NAME'    =>  $this->getSingularClassName($this->argument('name')).'Request',
+            'CLASS_NAME'    =>  $this->getSingularClassName($this->argument('name')),
         ];
     }
 

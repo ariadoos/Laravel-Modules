@@ -1,0 +1,80 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Modules\Core\Http\Controllers\CoreBaseController;
+use $SERVICE_NAMESPACE$;
+use $REQUEST_NAMESPACE$;
+
+class $CLASS_NAME$Controller extends CoreBaseController
+{
+    /**
+     * $CLASS_NAME$Service instance
+    **/
+    protected $service;
+
+    /**
+     * $CLASS_NAME$Controller constructor.
+     * @param $CLASS_NAME$Service $service
+     */
+    public function __construct($CLASS_NAME$Service $service)
+    {
+        parent::__construct();
+        $this->service = $service;
+    }
+
+
+    /**
+     * @param $CLASS_NAME$Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function index($CLASS_NAME$Request $request){
+        try {
+          
+        } catch (\Exception $t) {
+           return $this->sendErrorResponse($t->getMessage());
+        }
+    }
+
+
+    /**
+    * @param $CLASS_NAME$CreateRequest $request
+    * @return \Illuminate\Http\JsonResponse
+    */
+    public function create($CLASS_NAME$CreateRequest $request)
+    {
+       try {
+         
+       } catch (\Exception $t) {
+          return $this->sendErrorResponse($t->getMessage());
+       }
+    }
+
+
+     /**
+     * @param $CLASS_NAME$UpdateRequest $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+     public function update($CLASS_NAME$UpdateRequest $request)
+     {
+        try {
+         
+        } catch (\Exception $t) {
+              return $this->sendErrorResponse($t->getMessage());
+        }
+     }
+
+
+     /**
+     * @param $CLASS_NAME$DeleteRequest $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+     public function delete($CLASS_NAME$DeleteRequest $request)
+     {
+        try {
+    
+        } catch (\Exception $t) {
+           return $this->sendErrorResponse($t->getMessage());
+        }
+     }
+}

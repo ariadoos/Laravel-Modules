@@ -9,7 +9,7 @@ class MakeRequestCommand extends GenerateCommand
      *
      * @var string
      */
-    protected $signature = 'make:module-request {name} {module}';
+    protected $signature = 'make:module-request {name} {module} {--r}';
 
     /**
      * The console command description.
@@ -64,6 +64,83 @@ class MakeRequestCommand extends GenerateCommand
     public function getSourceFile()
     {
         return $this->getStubContents($this->getStubPath(), $this->getStubVariables());
+    }
+
+    /**
+     * Return a resource file stub path
+     * @param $key
+     * @return mixed
+     *
+     */
+    public function findStubPath($key)
+    {
+        $stubsPaths = [
+          'index' =>  __DIR__. '/../../Stubs/' . 'request.stub',
+          'create' =>  __DIR__. '/../../Stubs/' . 'create-request.stub',
+          'update' =>  __DIR__. '/../../Stubs/' . 'update-request.stub',
+          'delete' =>  __DIR__. '/../../Stubs/' . 'delete-request.stub',
+        ];
+
+        return $stubsPaths[$key];
+    }
+
+    /**
+     * Get all the resources files to be created
+     * @return array
+     */
+    public function getAllSourceFilePath()
+    {
+        $path = $this->getPath($this->getModuleNamespace($this->argument('module')) . '\\' . 'Http\\Requests');
+
+        return [
+          'index' => $path . '\\'  . $this->getSingularClassName($this->argument('name')). 'Request' .'.php',
+          'create' => $path . '\\' . $this->getSingularClassName($this->argument('name')). 'CreateRequest' .'.php',
+          'update' => $path . '\\' . $this->getSingularClassName($this->argument('name')). 'UpdateRequest' .'.php',
+          'delete' => $path . '\\' . $this->getSingularClassName($this->argument('name')). 'DeleteRequest' .'.php',
+        ];
+    }
+
+    /**
+     * Execute the console command.
+     */
+    public function handle()
+    {
+        if ($this->option('r')) {
+
+            $paths = $this->getAllSourceFilePath();
+
+            foreach ($paths as $file => $path) {
+
+                $this->makeDirectory(dirname($path));
+
+                $contents = $this->getStubContents($this->findStubPath($file), $this->getStubVariables());
+
+                if (!$this->files->exists($path)) {
+                    $this->files->put($path, $contents);
+                } else {
+                    $this->info("File : {$path} already exits");
+                }
+
+            }
+
+            $this->info("Resources Request File created");
+
+        } else {
+
+            $path = $this->getSourceFilePath();
+            $this->makeDirectory(dirname($path));
+
+            $contents = $this->getSourceFile();
+
+            if (!$this->files->exists($path)) {
+                $this->files->put($path, $contents);
+            } else {
+                $this->info("File : {$path} already exits");
+            }
+
+            $this->info("File: {$path} created");
+        }
+
     }
 
 }

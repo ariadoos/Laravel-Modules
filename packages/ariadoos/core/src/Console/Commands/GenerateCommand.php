@@ -175,7 +175,8 @@ abstract class GenerateCommand extends Command
         //create request file
         Artisan::call('make:module-request', [
             'module' => $this->moduleName,
-            'name'   => $this->moduleName
+            'name'   => $this->moduleName,
+            '--r'    => true
         ]);
 
         //create a api resource file

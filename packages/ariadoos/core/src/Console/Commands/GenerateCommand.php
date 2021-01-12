@@ -10,6 +10,13 @@ use Illuminate\Support\Pluralizer;
 
 abstract class GenerateCommand extends Command
 {
+    const API_CONTROLLER_NAMESPACE = 'Http\\Controllers\\Api';
+    const SERVICES_NAMESPACE = 'Services';
+    const REQUEST_NAMESPACE = 'Http\\Requests';
+    const WEB_CONTROLLER_NAMESPACE = 'Http\\Controllers\\Web';
+    const INTERFACE_NAMESPACE ='Repositories\\Interfaces';
+    const REPOSITORY_NAMESPACE = 'Repositories\\Eloquent';
+
     /**
      * Filesystem instance
      * @var Filesystem
@@ -181,6 +188,36 @@ abstract class GenerateCommand extends Command
 
         //create a api resource file
         Artisan::call('make:module-resource', [
+            'module' => $this->moduleName,
+            'name'   => $this->moduleName
+        ]);
+
+        //create a interface class file
+        Artisan::call('make:module-interface', [
+            'module' => $this->moduleName,
+            'name'   => $this->moduleName
+        ]);
+
+        //create a repository class file
+        Artisan::call('make:module-repository', [
+            'module' => $this->moduleName,
+            'name'   => $this->moduleName
+        ]);
+
+        //create a web controller class file
+        Artisan::call('make:module-service', [
+            'module' => $this->moduleName,
+            'name'   => $this->moduleName
+        ]);
+
+        //create a api controller class file
+        Artisan::call('make:module-api-controller', [
+            'module' => $this->moduleName,
+            'name'   => $this->moduleName
+        ]);
+
+        //create a web controller class file
+        Artisan::call('make:module-web-controller', [
             'module' => $this->moduleName,
             'name'   => $this->moduleName
         ]);

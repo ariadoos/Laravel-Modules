@@ -1,10 +1,10 @@
 <?php
 
-namespace $NAMESPACE$
+namespace $NAMESPACE$;
 
-use Modules\Core\Repositories\Interfaces\BaseInterface;
+use Modules\Core\Repositories\Interfaces\BaseRepositoryInterface;
 
-interface $ClASS_NAME$RepositoryInterface extends BaseRepositoryInterface
+interface $CLASS_NAME$RepositoryInterface extends BaseRepositoryInterface
 {
 
 }

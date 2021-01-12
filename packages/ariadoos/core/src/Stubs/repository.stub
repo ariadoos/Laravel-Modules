@@ -1,9 +1,10 @@
 <?php
 
-namespace $NAMESPACE$
+namespace $NAMESPACE$;
 
 use Modules\Core\Repositories\Eloquent\BaseRepository;
-use Modules\Core\Models\$CLASS_NAME$;
+use $MODULE_NAMESPACE$\Models\$CLASS_NAME$;
+use $INTERFACE_NAMESPACE$;
 
 class $CLASS_NAME$Repository extends BaseRepository implements $CLASS_NAME$RepositoryInterface
 {
@@ -11,7 +12,7 @@ class $CLASS_NAME$Repository extends BaseRepository implements $CLASS_NAME$Repos
      * $CLASS_NAME$ instance
      * @var $model
     **/
-    protected $model
+    protected $model;
 
     /**
      * $CLASS_NAME$Repository constructor.

@@ -4,7 +4,10 @@ namespace $NAMESPACE$;
 
 use Modules\Core\Http\Controllers\CoreBaseController;
 use $SERVICE_NAMESPACE$;
-use $REQUEST_NAMESPACE$;
+use $REQUEST_NAMESPACE$\$CLASS_NAME$Request;
+use $REQUEST_NAMESPACE$\$CLASS_NAME$CreateRequest;
+use $REQUEST_NAMESPACE$\$CLASS_NAME$DeleteRequest;
+use $REQUEST_NAMESPACE$\$CLASS_NAME$UpdateRequest;
 
 class $CLASS_NAME$Controller extends CoreBaseController
 {

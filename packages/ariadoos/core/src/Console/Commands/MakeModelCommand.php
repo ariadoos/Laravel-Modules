@@ -67,6 +67,4 @@ class MakeModelCommand extends GenerateCommand
         return $this->getStubContents($this->getStubPath(), $this->getStubVariables());
     }
 
-
-
 }

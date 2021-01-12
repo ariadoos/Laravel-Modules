@@ -2,8 +2,8 @@
 
 namespace $NAMESPACE$;
 
-use App\Core\Services\BaseService;
-use $INTERFACE_NAMESPACE$
+use Modules\Core\Services\BaseService;
+use $INTERFACE_NAMESPACE$;
 
 class $CLASS_NAME$Service extends BaseService
 {

@@ -56,7 +56,7 @@ class MakeApiControllerCommand extends GenerateCommand
             'NAMESPACE'         => $moduleNamespace . '\\' . parent::API_CONTROLLER_NAMESPACE,
             'CLASS_NAME'        => $className  ,
             'SERVICE_NAMESPACE' => $moduleNamespace . '\\' . parent::SERVICES_NAMESPACE. '\\' . $className.'Service' ,
-            'REQUEST_NAMESPACE' => $moduleNamespace . '\\' . parent::REQUEST_NAMESPACE,
+            'REQUEST_NAMESPACE' => $moduleNamespace . '\\' . parent::REQUEST_NAMESPACE .'\\' . $className,
         ];
     }
 

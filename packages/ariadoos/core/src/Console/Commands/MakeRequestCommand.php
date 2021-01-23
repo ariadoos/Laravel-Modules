@@ -50,7 +50,7 @@ class MakeRequestCommand extends GenerateCommand
     protected function getStubVariables()
     {
         return [
-            'NAMESPACE' => $this->getModuleNamespace($this->argument('module')) . '\\' . 'Http\\Requests',
+            'NAMESPACE' => $this->getModuleNamespace($this->argument('module')) . '\\' . 'Http\\Requests\\' . $this->getSingularClassName($this->argument('name')),
             'CLASS_NAME'    =>  $this->getSingularClassName($this->argument('name')),
         ];
     }
@@ -92,11 +92,13 @@ class MakeRequestCommand extends GenerateCommand
     {
         $path = $this->getPath($this->getModuleNamespace($this->argument('module')) . '\\' . 'Http\\Requests');
 
+        $fileBaseName = $this->getSingularClassName($this->argument('name'));
+
         return [
-          'index' => $path . '\\'  . $this->getSingularClassName($this->argument('name')). 'Request' .'.php',
-          'create' => $path . '\\' . $this->getSingularClassName($this->argument('name')). 'CreateRequest' .'.php',
-          'update' => $path . '\\' . $this->getSingularClassName($this->argument('name')). 'UpdateRequest' .'.php',
-          'delete' => $path . '\\' . $this->getSingularClassName($this->argument('name')). 'DeleteRequest' .'.php',
+          'index' => $path . '\\'. $fileBaseName . '\\'  . $this->getSingularClassName($this->argument('name')). 'Request' .'.php',
+          'create' => $path . '\\'. $fileBaseName . '\\' . $this->getSingularClassName($this->argument('name')). 'CreateRequest' .'.php',
+          'update' => $path . '\\'. $fileBaseName . '\\' . $this->getSingularClassName($this->argument('name')). 'UpdateRequest' .'.php',
+          'delete' => $path . '\\'. $fileBaseName . '\\' . $this->getSingularClassName($this->argument('name')). 'DeleteRequest' .'.php',
         ];
     }
 

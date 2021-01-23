@@ -22,7 +22,7 @@ class $CLASS_NAME$Controller extends CoreBaseController
      */
     public function __construct($CLASS_NAME$Service $service)
     {
-        parent::__construct();
+        //parent::__construct();
         $this->service = $service;
     }
 

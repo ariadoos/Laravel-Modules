@@ -17,6 +17,14 @@ abstract class GenerateCommand extends Command
     const INTERFACE_NAMESPACE ='Repositories\\Interfaces';
     const REPOSITORY_NAMESPACE = 'Repositories\\Eloquent';
 
+    const SERVICE_FILE = 'serviceFile';
+    const API_CONTROLLER_FILE = 'apiControllerFile';
+    const WEB_CONTROLLER_FILE = 'webControllerFile';
+    const INTERFACE_FILE = 'interfaceFile';
+    const REPOSITORY_FILE = 'repositoryFile';
+    const MODEL_FILE = 'modelFile';
+    const RESOURCE_FILE = 'resourceFile';
+
     /**
      * Filesystem instance
      * @var Filesystem
@@ -174,55 +182,171 @@ abstract class GenerateCommand extends Command
         ]);
 
         //create model file
-        Artisan::call('make:module-model', [
-            'module' => $this->moduleName,
-            'name'   => $this->moduleName
-        ]);
+        $this->modelArtisanCall($this->moduleName, $this->moduleName);
 
         //create request file
-        Artisan::call('make:module-request', [
-            'module' => $this->moduleName,
-            'name'   => $this->moduleName,
-            '--r'    => true
-        ]);
+        $this->requestArtisanCall($this->moduleName, $this->moduleName, true);
 
         //create a api resource file
-        Artisan::call('make:module-resource', [
-            'module' => $this->moduleName,
-            'name'   => $this->moduleName
-        ]);
+        $this->resourceArtisanCall($this->moduleName, $this->moduleName);
 
         //create a interface class file
-        Artisan::call('make:module-interface', [
-            'module' => $this->moduleName,
-            'name'   => $this->moduleName
-        ]);
+        $this->interfaceArtisanCall($this->moduleName, $this->moduleName);
 
         //create a repository class file
-        Artisan::call('make:module-repository', [
-            'module' => $this->moduleName,
-            'name'   => $this->moduleName
-        ]);
+        $this->repositoryArtisanCall($this->moduleName, $this->moduleName);
 
         //create a web controller class file
-        Artisan::call('make:module-service', [
-            'module' => $this->moduleName,
-            'name'   => $this->moduleName
-        ]);
+        $this->serviceArtisanCall($this->moduleName, $this->moduleName);
 
         //create a api controller class file
-        Artisan::call('make:module-api-controller', [
-            'module' => $this->moduleName,
-            'name'   => $this->moduleName
-        ]);
+        $this->apiControllerArtisanCall($this->moduleName, $this->moduleName);
 
         //create a web controller class file
-        Artisan::call('make:module-web-controller', [
-            'module' => $this->moduleName,
-            'name'   => $this->moduleName
-        ]);
+        $this->webControllerArtisanCall($this->moduleName, $this->moduleName);
 
     }
+
+    /**
+     * Create the Grouped Classes
+     * @param $moduleName
+     * @param $fileBaseName
+     * @param $exceptFile
+     */
+    public function callClassesCombo($moduleName, $fileBaseName, $exceptFile)
+    {
+        $this->requestArtisanCall($moduleName, $fileBaseName, true);
+
+        if($exceptFile != self::RESOURCE_FILE)
+            $this->resourceArtisanCall($moduleName, $fileBaseName);
+
+        if ($exceptFile != self::MODEL_FILE)
+            $this->modelArtisanCall($moduleName, $fileBaseName);
+
+        if ($exceptFile != self::INTERFACE_FILE)
+            $this->interfaceArtisanCall($moduleName, $fileBaseName);
+
+        if ($exceptFile != self::REPOSITORY_FILE)
+            $this->repositoryArtisanCall($moduleName, $fileBaseName);
+
+        if ($exceptFile != self::SERVICE_FILE)
+            $this->serviceArtisanCall($moduleName, $fileBaseName);
+
+        if ($exceptFile != self::API_CONTROLLER_FILE)
+            $this->apiControllerArtisanCall($moduleName, $fileBaseName);
+
+        if ($exceptFile != self::WEB_CONTROLLER_FILE)
+            $this->webControllerArtisanCall($moduleName, $fileBaseName);
+
+        return;
+    }
+
+    /**
+     * Create Interface File
+     * @param $module
+     * @param $name
+     */
+    public function interfaceArtisanCall($module, $name)
+    {
+        Artisan::call('make:module-interface', [
+            'module' => $module,
+            'name'   => $name
+        ]);
+    }
+
+    /**
+     * Create Repository File
+     * @param $module
+     * @param $name
+     */
+    public function repositoryArtisanCall($module, $name)
+    {
+        Artisan::call('make:module-repository', [
+            'module' => $module,
+            'name'   => $name
+        ]);
+    }
+
+    /**
+     * Create Service File
+     * @param $module
+     * @param $name
+     */
+    public function serviceArtisanCall($module, $name)
+    {
+        Artisan::call('make:module-service', [
+            'module' => $module,
+            'name'   => $name
+        ]);
+    }
+
+    /**
+     * Create API Controller File
+     * @param $module
+     * @param $name
+     */
+    public function apiControllerArtisanCall($module, $name)
+    {
+        Artisan::call('make:module-api-controller', [
+            'module' => $module,
+            'name'   => $name
+        ]);
+    }
+
+    /**
+     * Create Web Controller File
+     * @param $module
+     * @param $name
+     */
+    public function webControllerArtisanCall($module, $name)
+    {
+        Artisan::call('make:module-web-controller', [
+            'module' => $module,
+            'name'   => $name
+        ]);
+    }
+
+    /**
+     * Create Request File
+     * @param $module
+     * @param $name
+     * @param $all
+     */
+    public function requestArtisanCall($module, $name, $all)
+    {
+        Artisan::call('make:module-request', [
+            'module' => $module,
+            'name'   => $name,
+            '--r'    => $all
+        ]);
+    }
+
+    /**
+     * Create Model File
+     * @param $module
+     * @param $name
+     */
+    public function modelArtisanCall($module, $name)
+    {
+        Artisan::call('make:module-model', [
+            'module' => $module,
+            'name'   => $name
+        ]);
+    }
+
+    /**
+     * Create Resources File
+     * @param $module
+     * @param $name
+     */
+    public function resourceArtisanCall($module, $name)
+    {
+        Artisan::call('make:module-resource', [
+            'module' => $module,
+            'name'   => $name
+        ]);
+    }
+
 
     /**
      * Build the directory for the class if necessary.

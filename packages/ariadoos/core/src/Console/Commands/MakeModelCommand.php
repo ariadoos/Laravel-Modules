@@ -9,7 +9,7 @@ class MakeModelCommand extends GenerateCommand
      *
      * @var string
      */
-    protected $signature = 'make:module-model {name} {module}';
+    protected $signature = 'make:module-model {name} {module} {--all}';
 
     /**
      * The console command description.
@@ -51,7 +51,7 @@ class MakeModelCommand extends GenerateCommand
     protected function getStubVariables()
     {
         return [
-          'NAMESPACE' => $this->getModuleNamespace($this->argument('module') . '\\' . 'Models'),
+          'NAMESPACE' => $this->getModuleNamespace($this->argument('module')) .'\\'. 'Models',
           'CLASS_NAME'    =>  $this->getSingularClassName($this->argument('name')),
         ];
     }
@@ -65,6 +65,34 @@ class MakeModelCommand extends GenerateCommand
     public function getSourceFile()
     {
         return $this->getStubContents($this->getStubPath(), $this->getStubVariables());
+    }
+
+    /**
+     * Execute the console command.
+     *
+     *
+     */
+    public function handle()
+    {
+        $path = $this->getSourceFilePath();
+
+        $this->makeDirectory(dirname($path));
+
+        $contents = $this->getSourceFile();
+
+        if (!$this->files->exists($path)) {
+            $this->files->put($path, $contents);
+        } else {
+            $this->info("File : {$path} already exits");
+        }
+
+        if (!$this->option('all')) {
+            $this->info("File: {$path} created");
+        } else {
+            $this->callClassesCombo($this->argument('module'), $this->argument('name'), parent::MODEL_FILE);
+            $this->info("File: {$path} created with other associated files");
+        }
+
     }
 
 }

@@ -51,7 +51,7 @@ class MakeApiResourceCommand extends GenerateCommand
     protected function getStubVariables()
     {
         return [
-            'NAMESPACE' => $this->getModuleNamespace($this->argument('module') . '\\' . 'Http\\Resources'),
+            'NAMESPACE' => $this->getModuleNamespace($this->argument('module'))  . '\\' . 'Http\\Resources',
             'CLASS_NAME'    =>  $this->getSingularClassName($this->argument('name')),
         ];
     }

@@ -31,7 +31,8 @@ class $CLASS_NAME$Controller extends CoreBaseController
      * @param $CLASS_NAME$Request $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function index($CLASS_NAME$Request $request){
+    public function index($CLASS_NAME$Request $request)
+    {
         try {
           
         } catch (\Exception $t) {

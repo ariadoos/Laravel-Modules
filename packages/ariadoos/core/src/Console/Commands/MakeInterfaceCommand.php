@@ -78,6 +78,7 @@ class MakeInterfaceCommand extends GenerateCommand
     public function handle()
     {
         $path = $this->getSourceFilePath();
+
         $this->makeDirectory(dirname($path));
 
         $contents = $this->getSourceFile();
@@ -88,7 +89,12 @@ class MakeInterfaceCommand extends GenerateCommand
             $this->info("File : {$path} already exits");
         }
 
-        $this->info("File: {$path} created");
+        if (!$this->option('all')) {
+            $this->info("File: {$path} created");
+        } else {
+            $this->callClassesCombo($this->argument('module'), $this->argument('name'), parent::INTERFACE_FILE);
+            $this->info("File: {$path} created with other associated files");
+        }
     }
 
 }

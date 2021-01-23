@@ -50,7 +50,7 @@ class MakeRequestCommand extends GenerateCommand
     protected function getStubVariables()
     {
         return [
-            'NAMESPACE' => $this->getModuleNamespace($this->argument('module') . '\\' . 'Http\\Requests'),
+            'NAMESPACE' => $this->getModuleNamespace($this->argument('module')) . '\\' . 'Http\\Requests',
             'CLASS_NAME'    =>  $this->getSingularClassName($this->argument('name')),
         ];
     }

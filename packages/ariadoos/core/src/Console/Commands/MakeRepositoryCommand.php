@@ -89,7 +89,12 @@ class MakeRepositoryCommand extends GenerateCommand
             $this->info("File : {$path} already exits");
         }
 
-        $this->info("File: {$path} created");
+        if (!$this->option('all')) {
+            $this->info("File: {$path} created");
+        } else {
+            $this->callClassesCombo($this->argument('module'), $this->argument('name'), parent::REPOSITORY_FILE);
+            $this->info("File: {$path} created with other associated files");
+        }
     }
 
 }

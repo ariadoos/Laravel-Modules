@@ -13,8 +13,8 @@ class $CLASS_NAME$Service extends BaseService
     protected $repository;
 
    /**
-    * {module}Service constructor.
-    * @param {module}RepositoryInterface $repository
+    * $CLASS_NAME$Service constructor.
+    * @param $CLASS_NAME$RepositoryInterface $repository
    **/
     public function __construct($CLASS_NAME$RepositoryInterface $repository)
     {

@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Created by PhpStorm.
+ * User: @ariadoos - Nikesh Bdr. Adhikari
+ * Date: 1/29/2021
+ * Time: 2:14 PM
+ */
 namespace Modules\Core\Providers;
 
 use Modules\Core\Console\Commands\MakeApiControllerCommand;
@@ -14,6 +19,8 @@ use Modules\Core\Console\Commands\MakeServiceCommand;
 use Modules\Core\Console\Commands\MakeWebControllerCommand;
 use Modules\Core\Console\Commands\MakeWebRouteCommand;
 use Modules\Core\Console\Commands\MakeApiRouteCommand;
+use Modules\Core\Repositories\Eloquent\BaseRepository;
+use Modules\Core\Repositories\Interfaces\BaseRepositoryInterface;
 
 class CoreServiceProvider extends ServiceProvider
 {
@@ -38,6 +45,8 @@ class CoreServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__. '/../Routes/routes.php');
+
+        $this->app->bind(BaseRepositoryInterface::class, BaseRepository::class);
 
         if ($this->app->runningInConsole()) {
             $this->commands([

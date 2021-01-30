@@ -30,7 +30,8 @@ class $CLASS_NAME$ServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__. '/../Routes/routes.php');
+        $this->loadRoutesFrom(__DIR__. '/../Routes/web.php');
+         $this->loadRoutesFrom(__DIR__. '/../Routes/api.php');
 
         //binding interfaces to implementations
         $this->app->bind($CLASS_NAME$RepositoryInterface::class, $CLASS_NAME$Repository::class);

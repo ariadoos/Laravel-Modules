@@ -1,0 +1,43 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: @ariadoos - Nikesh Bdr. Adhikari
+ * Date: 1/29/2021
+ * Time: 7:14 PM
+ */
+namespace $NAMESPACE$;
+
+use Illuminate\Support\ServiceProvider;
+use $REPOSITORY_NAMESPACE$;
+use $INTERFACE_NAMESPACE$;
+
+class $CLASS_NAME$ServiceProvider extends ServiceProvider
+{
+    /**
+     * Register any application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+
+    }
+
+    /**
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        $this->loadRoutesFrom(__DIR__. '/../Routes/routes.php');
+
+        //binding interfaces to implementations
+        $this->app->bind($CLASS_NAME$RepositoryInterface::class, $CLASS_NAME$Repository::class);
+
+        /**
+        if ($this->app->runningInConsole()) {
+            $this->commands([]);
+        } **/
+    }
+}

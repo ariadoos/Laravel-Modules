@@ -3,11 +3,14 @@
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/packages/ariadoos/core/src/Repositories/Interfaces/BaseRepositoryInterface.php" line="7" />
     <bookmark url="file://$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeRequestCommand.php" line="74" />
+    <bookmark url="file://$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeProviderCommand.php" line="40" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="297c17d1-8a66-4247-b878-6ef2ce16b35c" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/ariadoos/core/src/Providers/CoreServiceProviders.php" afterPath="$PROJECT_DIR$/packages/ariadoos/core/src/Providers/CoreServiceProvider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/ariadoos/core/src/Providers/CoreServiceProviders.php" afterPath="$PROJECT_DIR$/packages/ariadoos/core/src/Providers/CoreServiceProviders.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/GenerateCommand.php" afterPath="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/GenerateCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/ariadoos/core/src/Routes/routes.php" afterPath="$PROJECT_DIR$/packages/ariadoos/core/src/Routes/routes.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,33 +24,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CoreServiceProviders.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Providers/CoreServiceProviders.php">
+      <file leaf-file-name="GenerateCommand.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/GenerateCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-902">
-              <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+            <state relative-caret-position="1474">
+              <caret line="367" column="0" lean-forward="false" selection-start-line="367" selection-start-column="0" selection-end-line="367" selection-end-column="0" />
               <folding>
-                <element signature="e#151#210#0#PHP" expanded="true" />
+                <element signature="e#5570#6579#0#PHP" expanded="false" />
+                <element signature="e#6672#6860#0#PHP" expanded="false" />
+                <element signature="e#6954#7144#0#PHP" expanded="false" />
+                <element signature="e#7235#7419#0#PHP" expanded="false" />
+                <element signature="e#7517#7714#0#PHP" expanded="false" />
+                <element signature="e#7812#8009#0#PHP" expanded="false" />
+                <element signature="e#8119#8339#0#PHP" expanded="false" />
+                <element signature="e#8428#8608#0#PHP" expanded="false" />
+                <element signature="e#8701#8887#0#PHP" expanded="false" />
+                <element signature="e#9303#9503#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Repositories/Eloquent/BaseRepository.php">
+      <file leaf-file-name="CoreServiceProvider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Providers/CoreServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+            <state relative-caret-position="583">
+              <caret line="91" column="21" lean-forward="false" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+              <folding>
+                <element signature="e#1162#1295#0#PHP" expanded="false" />
+                <element signature="e#1387#2260#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MakeProviderCommand.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeProviderCommand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-32">
+              <caret line="38" column="36" lean-forward="false" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+              <folding>
+                <element signature="e#543#824#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="providers.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/providers.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseRepositoryInterface.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Repositories/Interfaces/BaseRepositoryInterface.php">
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bootstrap/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+            <state relative-caret-position="243">
+              <caret line="18" column="75" lean-forward="true" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Routes/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="593" column="31" lean-forward="false" selection-start-line="593" selection-start-column="20" selection-end-line="593" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="providers-plain.stub" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/providers-plain.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -65,6 +142,8 @@
       <find>return $this-&gt;sendError($t-&gt;getMessage());</find>
       <find>$moduleName</find>
       <find>getModuleNamespace</find>
+      <find>registerCon</find>
+      <find>dd</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -78,21 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modules/core/src/Stubs/model.stub" />
-        <option value="$PROJECT_DIR$/modules/core/src/Stubs/requests.stub" />
-        <option value="$PROJECT_DIR$/modules/core/src/Console/Commands/GenerateCommand.php" />
-        <option value="$PROJECT_DIR$/modules/core/src/Providers/CoreServiceProviders.php" />
-        <option value="$PROJECT_DIR$/modules/core/src/Stubs/request.stub" />
-        <option value="$PROJECT_DIR$/modules/core/src/Console/Commands/CreateModuleCommand.php" />
-        <option value="$PROJECT_DIR$/modules/core/src/Console/Commands/MakeModelCommand.php" />
-        <option value="$PROJECT_DIR$/modules/core/src/Console/Commands/MakeApiRouteCommand.php" />
-        <option value="$PROJECT_DIR$/modules/core/src/Console/Commands/MakeRequestCommand.php" />
-        <option value="$PROJECT_DIR$/modules/core/src/Console/Commands/MakeWebRouteCommand.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/composer.json" />
-        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/resources.stub" />
-        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/CreateModuleCommand.php" />
-        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Repositories/Interface/BaseRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Repositories/Contract/BaseRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Traits/Response.php" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Constants/StatusCodes.php" />
@@ -115,20 +179,35 @@
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/repository.stub" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/interfaces.stub" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Config/core.php" />
-        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Routes/routes.php" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/services.stub" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/web-controller.stub" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/api-controller.stub" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeServiceCommand.php" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeRepositoryCommand.php" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeInterfaceCommand.php" />
-        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/GenerateCommand.php" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeModelCommand.php" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeApiResourceCommand.php" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeRequestCommand.php" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeApiControllerCommand.php" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeWebControllerCommand.php" />
+        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/providers-plain.stub" />
+        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/app.stub" />
+        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeAppConfigCommand.php" />
+        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeRegisterProvidersCommand.php" />
+        <option value="$PROJECT_DIR$/storage/logs/laravel.log" />
+        <option value="$PROJECT_DIR$/app/Modules/Shops/Config/app.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Shops/Providers/ShopServiceProviders.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" />
+        <option value="$PROJECT_DIR$/config/core-app.php" />
+        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Config/app.php" />
         <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Providers/CoreServiceProviders.php" />
+        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeProviderCommand.php" />
+        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/GenerateCommand.php" />
+        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Providers/CoreServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Modules/Shops/Providers/ShopServiceProvider.php" />
+        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/providers.stub" />
+        <option value="$PROJECT_DIR$/app/Modules/Shops/Routes/web.php" />
+        <option value="$PROJECT_DIR$/packages/ariadoos/core/src/Routes/routes.php" />
       </list>
     </option>
   </component>
@@ -173,6 +252,22 @@
             <path>
               <item name="Core" type="b2602c69:ProjectViewProjectNode" />
               <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="packages" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -203,36 +298,12 @@
               <item name="ariadoos" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Providers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Routes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Core" type="b2602c69:ProjectViewProjectNode" />
               <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="packages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ariadoos" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="packages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ariadoos" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Eloquent" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="packages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ariadoos" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Interfaces" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -252,6 +323,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Core\app\Modules\Shops\Config" />
       <recent name="C:\xampp\htdocs\Core\packages\ariadoos\core\src\Console\Commands" />
       <recent name="C:\xampp\htdocs\Core\modules\core\src\Console\Commands" />
     </key>
@@ -307,12 +379,12 @@
       <workItem from="1611463217753" duration="43000" />
       <workItem from="1611489675941" duration="113000" />
       <workItem from="1611578906397" duration="758000" />
-      <workItem from="1611907864155" duration="1099000" />
+      <workItem from="1611907864155" duration="21787000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110762000" />
+    <option name="totallyTimeSpent" value="131450000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -380,109 +452,9 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/delete-request.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Http/RequestsShopCreateRequest.php" />
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/update-request.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Http/Requests/CheckoutRequest.php" />
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/create-request.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/interfaces.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/repository.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Config/core.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-          <caret line="34" column="50" lean-forward="false" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/request.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Http/Requests/ShopCreateRequest.php" />
-    <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Http/Requests/ShopDeleteRequest.php" />
-    <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Http/Requests/ShopRequest.php" />
-    <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Http/Requests/ShopUpdateRequest.php" />
-    <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Routes/api.php" />
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Routes/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/services.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Services/BaseService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Services/ShopService.php" />
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Http/Controllers/CoreBaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/web-controller.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Http/Controllers/Web/ShopController.php" />
     <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Http/Resources/Shop.php" />
     <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Http/Controllers/Web/CartController.php" />
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-11134">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="441" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Repositories/Interfaces/CartRepositoryInterface.php" />
     <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Services/CartService.php" />
     <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Models/Ram.php" />
@@ -497,7 +469,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Repositories/Interfaces/ShopRepositoryInterface.php" />
-    <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Routes/web.php" />
     <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Http/Resources/Cart.php" />
     <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeApiRouteCommand.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -506,24 +477,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeInterfaceCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1029">
-          <caret line="78" column="5" lean-forward="false" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeModelCommand.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1193">
           <caret line="90" column="16" lean-forward="false" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeRepositoryCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="94" column="111" lean-forward="false" selection-start-line="94" selection-start-column="111" selection-end-line="94" selection-end-column="111" />
         </state>
       </provider>
     </entry>
@@ -540,13 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1053">
           <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/GenerateCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -580,14 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Repositories/Interfaces/BaseRepositoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Repositories/Eloquent/BaseRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -596,13 +538,240 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Providers/CoreServiceProviders.php">
+    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Repositories/Interfaces/BaseRepositoryInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-902">
-          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        <state relative-caret-position="486">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Repositories/Interfaces/ShopServiceProviders.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeRegisterProvidersCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-918">
+          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeInterfaceCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="75" column="6" lean-forward="false" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
           <folding>
-            <element signature="e#151#210#0#PHP" expanded="true" />
+            <element signature="e#543#829#0#PHP" expanded="false" />
+            <element signature="e#908#1013#0#PHP" expanded="false" />
+            <element signature="e#1129#1501#0#PHP" expanded="false" />
+            <element signature="e#1618#1749#0#PHP" expanded="false" />
+            <element signature="e#1821#2477#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/core-app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Config/core.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="168" column="10" lean-forward="true" selection-start-line="168" selection-start-column="10" selection-end-line="168" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/logs/laravel.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-7663">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeRepositoryCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="881">
+          <caret line="94" column="111" lean-forward="false" selection-start-line="94" selection-start-column="111" selection-end-line="94" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Providers/ShopServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/providers-plain.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/app.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Shops/Routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="593" column="31" lean-forward="false" selection-start-line="593" selection-start-column="20" selection-end-line="593" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Stubs/providers.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/MakeProviderCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="38" column="36" lean-forward="false" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+          <folding>
+            <element signature="e#543#824#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Providers/CoreServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="91" column="21" lean-forward="false" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+          <folding>
+            <element signature="e#1162#1295#0#PHP" expanded="false" />
+            <element signature="e#1387#2260#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Console/Commands/GenerateCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1474">
+          <caret line="367" column="0" lean-forward="false" selection-start-line="367" selection-start-column="0" selection-end-line="367" selection-end-column="0" />
+          <folding>
+            <element signature="e#5570#6579#0#PHP" expanded="false" />
+            <element signature="e#6672#6860#0#PHP" expanded="false" />
+            <element signature="e#6954#7144#0#PHP" expanded="false" />
+            <element signature="e#7235#7419#0#PHP" expanded="false" />
+            <element signature="e#7517#7714#0#PHP" expanded="false" />
+            <element signature="e#7812#8009#0#PHP" expanded="false" />
+            <element signature="e#8119#8339#0#PHP" expanded="false" />
+            <element signature="e#8428#8608#0#PHP" expanded="false" />
+            <element signature="e#8701#8887#0#PHP" expanded="false" />
+            <element signature="e#9303#9503#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="18" column="75" lean-forward="true" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ariadoos/core/src/Routes/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

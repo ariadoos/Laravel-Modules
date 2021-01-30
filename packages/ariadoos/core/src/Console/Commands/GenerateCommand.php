@@ -16,6 +16,8 @@ abstract class GenerateCommand extends Command
     const WEB_CONTROLLER_NAMESPACE = 'Http\\Controllers\\Web';
     const INTERFACE_NAMESPACE ='Repositories\\Interfaces';
     const REPOSITORY_NAMESPACE = 'Repositories\\Eloquent';
+    const PROVIDER_NAMESPACE = 'Providers';
+    const CONFIG_NAMESPACE = 'Config';
 
     const SERVICE_FILE = 'serviceFile';
     const API_CONTROLLER_FILE = 'apiControllerFile';
@@ -205,6 +207,9 @@ abstract class GenerateCommand extends Command
         //create a web controller class file
         $this->webControllerArtisanCall($this->moduleName, $this->moduleName);
 
+        //create a providers class file
+        $this->providerArtisanCall($this->moduleName, $this->moduleName);
+
     }
 
     /**
@@ -347,6 +352,19 @@ abstract class GenerateCommand extends Command
         ]);
     }
 
+
+    /**
+     * Create Providers File
+     * @param $module
+     * @param $name
+     */
+    public function providerArtisanCall($module, $name)
+    {
+        Artisan::call('make:module-providers', [
+            'module' => $module,
+            'name'   => $name
+        ]);
+    }
 
     /**
      * Build the directory for the class if necessary.

@@ -12,7 +12,7 @@ The command below will quickly generate the basic folders needed for a module.
     php artisan make:module {module-name}
 ~~~
 
-For instance, it you need to create a shop module, then you should run a command given below
+For instance, if you need to create a shop module, then you should run a command given below
 
 ~~~php
     php artisan make:module Shop
